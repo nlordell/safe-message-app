@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Message</title>
+    <style>
+      body {
+        background: white;
+      }
+
+      #debug {
+        display: none;
+        font-family: monospace;
+      }
+      #error {
+        color: darkred;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="transaction">
+      <input type="file" id="message">
+      <button type="button" id="sign" disabled=true>Sign</button>
+    </form>
+
+    <div id="debug"></div>
+    <div id="error"></div>
+
+    <script data-src="index.js">
+    </script>
+  </body>
+</html>
